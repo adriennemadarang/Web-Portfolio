@@ -4,15 +4,11 @@ margin: 0;
 font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
-    width: 100%;
-    background-position: center;
-}
 nav {
     display: flex;
     justify-content: space-between;
     align-items:baseline;
-    padding: 2px 5px;
+    padding: 15px 5px 5px;
     background-color: gray;
 }
 
@@ -38,6 +34,15 @@ body {
     line-height: 2.0;
     background-color: whitesmoke;
 }
+
+.about {
+    margin: 45px;
+}
+
+.work {
+    margin: 45px;
+}
+
 
 
 .flexbox-container {
@@ -94,17 +99,14 @@ rgb(224, 91, 8);
 .footer {
     width: 100%;
     text-align: center;
-    padding: 10px 0px;
-
+    margin: 50px;
 }
 
 .footer h1{
     margin-top: 50px;
     margin-bottom: 0px ;
-    font-weight: 600;
     text-align: left;
 }
-
 
 
 @media screen and (max-width: 992px) {
@@ -116,7 +118,11 @@ rgb(224, 91, 8);
 
   @media screen and (max-width: 768px) {
     body {
-      background-color: #e8d5f6;
-    }
+      background-color: #e1caf2; 
+  }
+  .flexbox-container {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
   
+}
