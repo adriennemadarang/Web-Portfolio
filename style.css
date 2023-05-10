@@ -1,54 +1,122 @@
 *{
 padding: 0;
 margin: 0;
+font-family: Arial, Helvetica, sans-serif;
 }
 
+.header {
+    width: 100%;
+    background-position: center;
+}
 nav {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px;
+    justify-content: space-between;
+    align-items:baseline;
+    padding: 2px 5px;
     background-color: gray;
 }
 
-nav ul {
-    display: flex;
-    gap: 1.9rem;
+nav img{
+    width: 150px;
+
+}
+nav ul li{
+    display: inline-block;
+    padding: 2px 15px;
     font-weight: bold;
     list-style-type: none;
+    position:relative;
+}
 
+nav ul li a{
+    color: orange;
+    font-size: 18px;
 }
 
 body {
-    font-family: monospace;
     font-size: 16px;
-    line-height: 3.0;
-    background-color: beige;
-
+    line-height: 2.0;
+    background-color: whitesmoke;
 }
-.flexbox-container {
-    max-width: 960px; 
-    margin: 100px auto;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
+
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 960px; 
+    margin: 5px auto;
+}
+
+.flexbox-container div:nth-child(1){
+    flex: 1 0 80%;
+}
+.flexbox-container div:nth-child(2){
+    flex: 1 0 40%;
+}
+
+.flexbox-container div:nth-child(3){
+    flex: 1 0 40%;
+}
+
+.flexbox-container div:nth-child(4){
+    flex: 1 0 40%;
+}
+
+.flexbox-container div:nth-child(5){
+    flex: 1 0 40%;
 }
 
 .card {
-background: gray; 
-color: black;
-font-size: 15px;
-padding: 20px;
-border: purple 2px solid; 
+flex-basis: content;
+background: lightgrey; 
+text-align: center;
+font-size: 12px;
+height: 200px;
+padding: 10px;
+border: rgb(0, 0, 0) 5px solid; 
 margin: 10px; 
+box-sizing: border-box;
 }
 
-.card:nth-of-type(2) {
-    height: 325px;
-    width: 500px;
-    grid-column: 1/ span 2; 
-   
+.card:hover{
+    box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+              
+.card:hover,
+.card:hover .card-header{
+    box-shadow: inset 0px 0px 8px 
+rgb(184, 100, 4), 0 0 50px 
+rgb(224, 91, 8);
 }
 
-/* need to add media query*/
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+
+}
+
+.footer h1{
+    margin-top: 50px;
+    margin-bottom: 0px ;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    body {
+      background: rgb(252, 216, 222);
+    }
+ 
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: #e8d5f6;
+    }
+  }
+  
