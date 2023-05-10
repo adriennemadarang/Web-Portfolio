@@ -1,4 +1,54 @@
 *{
-background-color: bisque;
+padding: 0;
+margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
+    background-color: gray;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+    font-weight: bold;
+    list-style-type: none;
 
 }
+
+body {
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 3.0;
+    background-color: beige;
+
+}
+.flexbox-container {
+    max-width: 960px; 
+    margin: 100px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.card {
+background: gray; 
+color: black;
+font-size: 15px;
+padding: 20px;
+border: purple 2px solid; 
+margin: 10px; 
+}
+
+.card:nth-of-type(2) {
+    height: 325px;
+    width: 500px;
+    grid-column: 1/ span 2; 
+   
+}
+
+/* need to add media query*/
