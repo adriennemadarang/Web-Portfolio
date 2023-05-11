@@ -1,7 +1,7 @@
 # Web-Portfolio
 
 # General Information
-This project is my personal portfolio and it includes a section about myself, my work (in progress), and how to contact me. Over time, I hope to update the Work section with actual projects I have completed. 
+This project is my personal portfolio and it includes a section about myself, my work in progress, my resume and how to contact me. Over time, I hope to update the Work section with actual projects I have completed.
 
 # Acceptance Criteria
 GIVEN I need to sample a potential employee's previous work
@@ -18,6 +18,6 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
-# Contribution
-I'd like to acknowledge the TA's, websites, and anyone/thing else who provided me with guidance on how to complete this page. 
+# Acknowledgement
+I'd like to shout out the instructor, TA's, websites, and anyone/thing else who provided me with guidance on how to complete this page. 
 
